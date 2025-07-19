@@ -1,0 +1,16 @@
+div#container {
+    background-color: pink;
+    padding: 20px;
+}
+div.row {
+    display: flex;
+}
+div.grid {
+    padding: 10px;
+    /*flex: 1;*/
+    background-color: yellow;
+    border: 1px solid;
+}
+div.color{
+    background-color: red;
+}
