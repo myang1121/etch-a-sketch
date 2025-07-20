@@ -14,8 +14,13 @@ for (let i = 0; i < 16; i ++) {
 }
 
 // Hovering
-grid.addEventListener("mouseenter", () => {
-    grid.classList.add("color");
-
+const grids = document.querySelectorAll(".grid");
+grids.forEach((grid) => {
+    grid.addEventListener("mouseenter", () => {
+        grid.classList.add("color");
+    });
 });
-    
+
+//const button = document.createElement("button");
+//"Please enter number of squares per size for new canvas (max 100):"
+

@@ -1,15 +1,21 @@
 div#container {
     background-color: pink;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+
+
 }
 div.row {
     display: flex;
+    flex: auto;
 }
 div.grid {
     padding: 10px;
-    /*flex: 1;*/
     background-color: yellow;
     border: 1px solid;
+    flex: auto;
 }
 div.color{
     background-color: red;
