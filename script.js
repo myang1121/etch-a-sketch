@@ -31,7 +31,11 @@ function etchASketch() {
     let grids = document.querySelectorAll(".grid");
     grids.forEach((grid) => {
         grid.addEventListener("mouseenter", () => {
-            grid.classList.add("color");
+            //grid.classList.add("color");
+            let r = Math.random()*256;
+            let g = Math.random()*256;
+            let b = Math.random()*256;
+            grid.setAttribute("style", `background-color:rgb(${r}, ${g}, ${b});`);
         });
     });
 };
