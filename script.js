@@ -35,7 +35,11 @@ function etchASketch() {
             let r = Math.random()*256;
             let g = Math.random()*256;
             let b = Math.random()*256;
-            grid.setAttribute("style", `background-color:rgb(${r}, ${g}, ${b});`);
+            // Only randomize color if white/blank grid
+            if (window.getComputedStyle(grid).getPropertyValue("background-color") === "rgb(255, 255, 255)") {
+                grid.setAttribute("style", `background-color:rgb(${r}, ${g}, ${b});`); 
+            }
+
         });
     });
 };
